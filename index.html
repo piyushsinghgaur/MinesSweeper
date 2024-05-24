@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics script -->
+    <!-- Insert your Google Analytics tracking code here -->
+</head>
+<body>
+    <div class="container">
+        <h1>Minesweeper</h1>
+        <div class="info">
+            <div id="level">Level: 1</div>
+            <div id="timer">Time: 0s</div>
+            <div id="score">Score: 0</div>
+        </div>
+        <div id="cheats-dropdown" class="cheats">
+            <select id="cheat-options">
+                <option value="reveal-board">Reveal Board</option>
+                <option value="reveal-mines">Reveal Mines</option>
+                <option value="hint">Hint</option>
+            </select>
+            <button id="cheat-button">Use Cheat</button>
+        </div>
+        <div id="difficulty-selection">
+            <button id="easy">Easy</button>
+            <button id="medium">Medium</button>
+            <button id="hard">Hard</button>
+        </div>
+        <div id="game-board"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="cheats.js"></script>
+</body>
+</html>
